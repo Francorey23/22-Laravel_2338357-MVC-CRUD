@@ -13,12 +13,8 @@ class Ejercicio1Controller extends Controller
 
     public function resultado_ejercicio1(Request $request){
         //$numero1 le asigno con request lo que viene del formjulario
-        $numero1 = $request->nombre;
-        for ($i=1; $i < $numero1 ; $i++) { 
-            echo $i;
-        }
-
-        return view('Ejercicio1.resultado_eje1', compact('i'));
+        $numero1 = $request->numero1;
+        return view('Ejercicio1.resultado_eje1', compact('numero1'));
 
     }
 }

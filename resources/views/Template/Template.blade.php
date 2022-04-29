@@ -17,7 +17,7 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ejercicio1 |</a>
+          <a class="nav-link" href="{{route('Ejercicio1')}}">Ejercicio1 |</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Ejercicio2 |</a>

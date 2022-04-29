@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Ejercicio1Controller;
+use App\Http\Controllers\Ejercicio2Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Ejercicio1',[Ejercicio1Controller::class, 'Ejercicio1']);
+//get sirve para mostrar el formulario
+Route::get('/Ejercicio1',[Ejercicio1Controller::class, 'Ejercicio1'])->name('Ejercicio1');
+//post sirve para llevar los datos del formulario
 Route::post('/resultadoej1', [Ejercicio1Controller::class,'resultado_ejercicio1'])->name('resultadoej1');
+
+Route::get('Ejercicio2', [Ejercicio2Controller::class,'Ejercicio2'])->name('Ejercicio2');
+Route::post('/resultadoej2', [Ejercicio2Controller::class, 'resultado_Ej2'])->name('resultadoej2');
